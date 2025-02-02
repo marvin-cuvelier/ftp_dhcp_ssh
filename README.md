@@ -11,7 +11,7 @@ Cette section explique comment installer et configurer un serveur **DHCP** avec 
         {
 
     "subnet": "172.16.0.0" "netmask": "255.255.0.0" {
-        range 172.16.1.10 172.16.1.100;
+       "range": "172.16.1.10" "172.16.1.100;"
         option domain-name-servers 8.8.8.8, 8.8.4.4;  
         option routers 172.16.0.1;   
         option broadcast-address 172.16.255.255;
