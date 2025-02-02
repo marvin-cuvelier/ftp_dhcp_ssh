@@ -7,6 +7,8 @@ Cette section explique comment installer et configurer un serveur **DHCP** avec 
   - Configuration dans `sudo nano /etc/dhcp/dhcpd.conf`.
   - Exemple de configuration pour un sous-réseau :
     ```json
+    "subnet4": [
+        {
 
     subnet 172.16.0.0 netmask 255.255.0.0 {
         range 172.16.1.10 172.16.1.100;
@@ -14,7 +16,8 @@ Cette section explique comment installer et configurer un serveur **DHCP** avec 
         option routers 172.16.0.1;   
         option broadcast-address 172.16.255.255;
         default-lease-time 600;   
-        max-lease-time 7200;      
+        max-lease-time 7200;} ]
+        }      
  ```
   - Redémarrage du service : `sudo systemctl restart networking
 `
