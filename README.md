@@ -39,7 +39,7 @@ Cette section explique comment installer et configurer un serveur **DHCP** avec 
 
 ---
 
-## 2. **Configuration SSH avec OpenSSH** 
+## 3. **Configuration SSH avec OpenSSH** 
 Cette section explique comment installer et configurer un serveur **SSH** sécurisé avec **OpenSSH**. Elle inclut des options pour restreindre l'accès, changer le port SSH et interdire les connexions root.
 
 - **Points clés :**
@@ -52,7 +52,7 @@ Cette section explique comment installer et configurer un serveur **SSH** sécur
 
 ---
 
-## 3. **Configuration FTP avec vsftpd** 
+## 4. **Configuration FTP avec vsftpd** 
 Cette section explique comment installer et configurer un serveur **FTP** sécurisé avec **vsftpd**. Elle inclut des options pour restreindre l'accès anonyme, configurer les permissions des fichiers et limiter les connexions.
 
 - **Points clés :**
@@ -65,7 +65,7 @@ Cette section explique comment installer et configurer un serveur **FTP** sécur
 
 ---
 
-## 4. **Configuration DNS avec BIND9**
+## 5. **Configuration DNS avec BIND9**
 Cette section explique comment installer et configurer un serveur DNS avec **BIND9**. Elle inclut la création de zones DNS, la configuration des enregistrements NS et A, ainsi que la configuration des options DNS.
 
 - **Points clés :**
@@ -76,17 +76,5 @@ Cette section explique comment installer et configurer un serveur DNS avec **BIN
 
 ---
 
-## 5. **Configuration d'une Adresse IP Statique**
-Cette section montre comment configurer une **adresse IP statique** sur une interface réseau. Cela est utile pour les serveurs qui nécessitent une IP fixe.
 
-- **Points clés :**
-  - Configuration de l'interface réseau dans `/etc/network/interfaces`.
-  - Exemple de configuration :
-    ```bash
-    auto ens33
-    iface ens33 inet static
-    address 172.16.0.1
-    netmask 255.255.0.0
-    ```
 
----
