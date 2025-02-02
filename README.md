@@ -17,7 +17,7 @@ Cette section explique comment installer et configurer un serveur **DHCP** avec 
        "option broadcast-address": "172.16.255.255;"
        "default-lease-time": "600;"   
        "max-lease-time": "7200;"}
-     ]
+   
         }
      ```
   - Redémarrage du service : `sudo systemctl restart networking
