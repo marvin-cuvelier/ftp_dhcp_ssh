@@ -1,19 +1,21 @@
-## 1. **Configuration DHCP avec Kea DHCP**
-Cette section explique comment installer et configurer un serveur **DHCP** avec **Kea DHCP**. Elle inclut la configuration des sous-réseaux, des pools d'adresses IP et des options DHCP.
+## 1. **Configuration DHCP avec ISC DHCP**
+Cette section explique comment installer et configurer un serveur **DHCP** avec **ISC DHCP**. Elle inclut la configuration des sous-réseaux, des pools d'adresses IP et des options DHCP.
 
 - **Points clés :**
-  - Installation de Kea DHCP : `sudo apt install kea-dhcp4-server -y`
-  - Configuration dans `/etc/kea/kea-dhcp4.conf`.
+  - Installation de ISC DHCP : `sudo apt install isc-dhcp-server
+`
+  - Configuration dans `sudo nano /etc/dhcp/dhcpd.conf`.
   - Exemple de configuration pour un sous-réseau :
     ```json
-    "subnet4": [
-        {
-            "subnet": "172.20.0.0/16",
-            "pools": [ { "pool": "172.20.0.10 - 172.20.0.50" } ],
-            "option-data": [ { "name": "domain-name-servers", "data": "172.20.0.5" } ]
-        }
-    ]
-    ```
+
+    subnet 172.16.0.0 netmask 255.255.0.0 {
+        range 172.16.1.10 172.16.1.100;
+        option domain-name-servers 8.8.8.8, 8.8.4.4;  
+        option routers 172.16.0.1;   
+        option broadcast-address 172.16.255.255;
+        default-lease-time 600;   
+        max-lease-time 7200;      
+ ```
   - Redémarrage du service : `sudo systemctl restart kea-dhcp4-server.service`
 
 ---
