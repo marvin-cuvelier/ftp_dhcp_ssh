@@ -69,7 +69,7 @@ Cette section montre comment configurer une **adresse IP statique** sur une inte
     ```bash
     auto ens33
     iface ens33 inet static
-    address 172.16.0.10
+    address 172.16.0.1
     netmask 255.255.0.0
     ```
 
