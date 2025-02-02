@@ -16,7 +16,8 @@ Cette section explique comment installer et configurer un serveur **DHCP** avec 
         default-lease-time 600;   
         max-lease-time 7200;      
  ```
-  - Redémarrage du service : `sudo systemctl restart kea-dhcp4-server.service`
+  - Redémarrage du service : `sudo systemctl restart networking
+`
 
 ---
 
