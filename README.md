@@ -1,4 +1,18 @@
-## 1. **Configuration DHCP avec ISC DHCP**
+## 1. **Configuration d'une Adresse IP Statique**
+Cette section montre comment configurer une **adresse IP statique** sur une interface réseau. Cela est utile pour les serveurs qui nécessitent une IP fixe.
+
+- **Points clés :**
+  - Configuration de l'interface réseau dans `/etc/network/interfaces`.
+  - Exemple de configuration :
+    ```bash
+    auto ens33
+    iface ens33 inet static
+    address 172.16.0.1
+    netmask 255.255.0.0
+    ```
+
+
+## 2. **Configuration DHCP avec ISC DHCP**
 Cette section explique comment installer et configurer un serveur **DHCP** avec **ISC DHCP**. Elle inclut la configuration des sous-réseaux, des pools d'adresses IP et des options DHCP.
 
 - **Points clés :**
