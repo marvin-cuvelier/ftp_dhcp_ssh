@@ -52,7 +52,7 @@ Cette section explique comment installer et configurer un serveur **SSH** sécur
 
 ---
 
-## 4. **Configuration FTP avec proFTPD** 
+## 4. **Configuration FTP avec proFTPd** 
 Cette section explique comment installer et configurer un serveur **FTP** sécurisé avec **proFTPd**. Elle inclut des options pour restreindre l'accès anonyme, configurer les permissions des fichiers et limiter les connexions.
 
 - **Points clés :**
