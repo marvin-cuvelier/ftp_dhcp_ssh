@@ -52,12 +52,12 @@ Cette section explique comment installer et configurer un serveur **SSH** sécur
 
 ---
 
-## 4. **Configuration FTP avec vsftpd** 
-Cette section explique comment installer et configurer un serveur **FTP** sécurisé avec **vsftpd**. Elle inclut des options pour restreindre l'accès anonyme, configurer les permissions des fichiers et limiter les connexions.
+## 4. **Configuration FTP avec proFTPD** 
+Cette section explique comment installer et configurer un serveur **FTP** sécurisé avec **proFTPd**. Elle inclut des options pour restreindre l'accès anonyme, configurer les permissions des fichiers et limiter les connexions.
 
 - **Points clés :**
-  - Installation de vsftpd : `sudo apt install vsftpd -y`
-  - Configuration dans `/etc/vsftpd.conf` :
+  - Installation de proFTPd : `sudo apt install proFTPd -y`
+  - Configuration dans `/etc/proFTPd.conf` :
     - Désactivation de l'accès anonyme : `anonymous_enable=NO`
     - Restriction des utilisateurs : `chroot_local_user=YES`
     - Limitation des connexions : `max_per_ip=10`, `max_clients=20`
